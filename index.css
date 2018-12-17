@@ -1,0 +1,163 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: Comfortaa;
+}
+
+body {background-color: #202020;}
+
+#title {
+  color: #E8E8E8;
+  padding-left: 10px;
+}
+
+a:link {
+  color: goldenrod;
+}
+
+a:visited {
+  color: goldenrod;
+}
+
+a:hover {
+  color: #E8E8E8;
+}
+
+p {
+  padding-left: 10px;
+  color: #E8E8E8;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.button {
+  font-family: Comfortaa;
+  display: inline-block;
+  padding: 10px 18px;
+  margin-bottom: 10px;
+  background: #EEE;
+  border: none;
+  color: #222;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline:0;
+}
+
+.button:hover {
+  background-color: #202020;
+  color: white;
+}
+
+button#meal:active,
+button#meal.is-checked {
+  background-color: cornflowerblue;
+  color: white;
+}
+button#all:active,
+button#all.is-checked {
+  background-color: chocolate;
+  color: white;
+}
+button#vegetable:active,
+button#vegetable.is-checked {
+  background-color: seagreen;
+  color: white;
+}
+button#carb:active,
+button#carb.is-checked {
+  background-color: goldenrod;
+  color: white;
+}
+button#protein:active,
+button#protein.is-checked {
+  background-color: darkorchid;
+  color: white;
+}
+button#method:active,
+button#method.is-checked {
+  background-color: crimson;
+  color: white;
+}
+button#cuisine:active,
+button#cuisine.is-checked {
+  background-color: teal;
+  color: white;
+}
+/* ---- button-group ---- */
+
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.button-group .button {
+  float: left;
+  border-radius: 0;
+  margin-left: 0;
+  margin-right: 1px;
+}
+
+.button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
+.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .element-item ---- */
+
+.element-item {
+  position: relative;
+  float: left;
+  width: 130px;
+  height: 50px;
+  margin: 5px;
+  padding: 10px;
+  background: #888;
+  color: #262524;
+  border-radius: 10px;
+}
+
+.element-item > * {
+  margin: 0;
+  padding: 0;
+}
+
+.element-item .name {
+  position: absolute;
+  color: white;
+  left: 10px;
+  top: 40%;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.element-item .number {
+  visibility: hidden;
+}
+
+.element-item .cat {
+  visibility: hidden;
+}
+
+.element-item .weight {
+  position: absolute;
+  left: 10px;
+  top: 76px;
+  font-size: 12px;
+}
+
+.element-item.vegetable          { background: seagreen; }
+.element-item.carb          { background: goldenrod; }
+.element-item.protein          { background: darkorchid; }
+.element-item.method          { background: crimson; }
+.element-item.cuisine          { background: teal; }
