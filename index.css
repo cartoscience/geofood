@@ -86,7 +86,6 @@ button#cuisine.is-checked {
   background-color: teal;
   color: white;
 }
-/* ---- button-group ---- */
 
 .button-group:after {
   content: '';
@@ -104,14 +103,11 @@ button#cuisine.is-checked {
 .button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
 .button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
 
-/* clear fix */
 .grid:after {
   content: '';
   display: block;
   clear: both;
 }
-
-/* ---- .element-item ---- */
 
 .element-item {
   position: relative;
