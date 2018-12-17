@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa" />
+		<meta name="google" content="notranslate">
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<h1 id="title">I'm hungry! What should I eat?</h1>
+		
+		<div class="button-group filters-button-group" style="padding-left: 7px">
+		  <button id="meal" class="button" data-filter="meal">Randomize Meal</button>
+		  <button id="all" class="button is-checked" data-filter="*">All</button>
+		  <button id="vegetable" class="button" data-filter=".vegetable">Vegetable</button>
+		  <button id="carb" class="button" data-filter=".carb">Carb</button>
+		  <button id="protein" class="button" data-filter=".protein">Protein</button>
+		  <button id="method" class="button" data-filter=".method">Method</button>
+		  <button id="cuisine" class="button" data-filter=".cuisine">Cuisine</button>
+		</div>
+
+		<div class="grid">
+		  <div class="element-item vegetable " data-category="vegetable">
+		    <h3 class="name">Asparagus</h3>
+		    <p class="number">1</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item vegetable " data-category="vegetable">
+		    <h3 class="name">Beet</h3>
+		    <p class="number">2</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item vegetable " data-category="vegetable">
+		    <h3 class="name">Carrot</h3>
+		    <p class="number">3</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item vegetable " data-category="vegetable">
+		    <h3 class="name">Spinach</h3>
+		    <p class="number">4</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item vegetable " data-category="vegetable">
+		    <h3 class="name">Broccoli</h3>
+		    <p class="number">5</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item vegetable " data-category="vegetable">
+		    <h3 class="name">Corn</h3>
+		    <p class="number">6</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item vegetable " data-category="vegetable">
+		    <h3 class="name">Squash</h3>
+		    <p class="number">7</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item vegetable " data-category="vegetable">
+		    <h3 class="name">Artichoke</h3>
+		    <p class="number">8</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item vegetable " data-category="vegetable">
+		    <h3 class="name">Peas</h3>
+		    <p class="number">9</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item vegetable " data-category="vegetable">
+		    <h3 class="name">Kale</h3>
+		    <p class="number">10</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item vegetable " data-category="vegetable">
+		    <h3 class="name">Cabbage</h3>
+		    <p class="number">11</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item vegetable " data-category="vegetable">
+		    <h3 class="name">Cauliflower</h3>
+		    <p class="number">12</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item vegetable " data-category="vegetable">
+		    <h3 class="name">Brussels sprouts</h3>
+		    <p class="number">13</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item vegetable " data-category="vegetable">
+		    <h3 class="name">Eggplant</h3>
+		    <p class="number">14</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item vegetable " data-category="vegetable">
+		    <h3 class="name">Tomato</h3>
+		    <p class="number">15</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item carb " data-category="carb">
+		    <h3 class="name">Rice</h3>
+		    <p class="number">1</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item carb " data-category="carb">
+		    <h3 class="name">Quinoa</h3>
+		    <p class="number">2</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item carb " data-category="carb">
+		    <h3 class="name">Barley</h3>
+		    <p class="number">3</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item carb " data-category="carb">
+		    <h3 class="name">Pasta</h3>
+		    <p class="number">4</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item carb " data-category="carb">
+		    <h3 class="name">Beans</h3>
+		    <p class="number">5</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item carb " data-category="carb">
+		    <h3 class="name">Bread</h3>
+		    <p class="number">6</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item carb " data-category="carb">
+		    <h3 class="name">Potato</h3>
+		    <p class="number">7</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item carb " data-category="carb">
+		    <h3 class="name">Lentils</h3>
+		    <p class="number">8</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item protein " data-category="protein">
+		    <h3 class="name">Ground beef</h3>
+		    <p class="number">1</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item protein " data-category="protein">
+		    <h3 class="name">Pork chops</h3>
+		    <p class="number">2</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item protein " data-category="protein">
+		    <h3 class="name">Shrimp</h3>
+		    <p class="number">3</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item protein " data-category="protein">
+		    <h3 class="name">Salmon</h3>
+		    <p class="number">4</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item protein " data-category="protein">
+		    <h3 class="name">Chicken wings</h3>
+		    <p class="number">5</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item protein " data-category="protein">
+		    <h3 class="name">Chicken breast</h3>
+		    <p class="number">6</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item protein " data-category="protein">
+		    <h3 class="name">Steak</h3>
+		    <p class="number">7</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item protein " data-category="protein">
+		    <h3 class="name">Tilapia</h3>
+		    <p class="number">8</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item protein " data-category="protein">
+		    <h3 class="name">Tuna</h3>
+		    <p class="number">9</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item protein " data-category="protein">
+		    <h3 class="name">Eggs</h3>
+		    <p class="number">10</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item protein " data-category="protein">
+		    <h3 class="name">Pork loin</h3>
+		    <p class="number">11</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item protein " data-category="protein">
+		    <h3 class="name">Lamb</h3>
+		    <p class="number">12</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item method " data-category="method">
+		    <h3 class="name">Grill</h3>
+		    <p class="number">1</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item method " data-category="method">
+		    <h3 class="name">Broil</h3>
+		    <p class="number">2</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item method " data-category="method">
+		    <h3 class="name">Bake</h3>
+		    <p class="number">3</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item method " data-category="method">
+		    <h3 class="name">Stew</h3>
+		    <p class="number">4</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item method " data-category="method">
+		    <h3 class="name">Deep fry</h3>
+		    <p class="number">5</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item method " data-category="method">
+		    <h3 class="name">Roast</h3>
+		    <p class="number">6</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item method " data-category="method">
+		    <h3 class="name">Steam</h3>
+		    <p class="number">7</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item method " data-category="method">
+		    <h3 class="name">Sauté</h3>
+		    <p class="number">8</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item method " data-category="method">
+		    <h3 class="name">Stir fry</h3>
+		    <p class="number">9</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item method " data-category="method">
+		    <h3 class="name">Smoke</h3>
+		    <p class="number">10</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item cuisine " data-category="cuisine">
+		    <h3 class="name">Chinese</h3>
+		    <p class="number">1</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item cuisine " data-category="cuisine">
+		    <h3 class="name">American</h3>
+		    <p class="number">2</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item cuisine " data-category="cuisine">
+		    <h3 class="name">Mexican</h3>
+		    <p class="number">3</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item cuisine " data-category="cuisine">
+		    <h3 class="name">Italian</h3>
+		    <p class="number">4</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item cuisine " data-category="cuisine">
+		    <h3 class="name">Thai</h3>
+		    <p class="number">5</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item cuisine " data-category="cuisine">
+		    <h3 class="name">Indian</h3>
+		    <p class="number">6</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item cuisine " data-category="cuisine">
+		    <h3 class="name">Greek</h3>
+		    <p class="number">7</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item cuisine " data-category="cuisine">
+		    <h3 class="name">Ethiopian</h3>
+		    <p class="number">8</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item cuisine " data-category="cuisine">
+		    <h3 class="name">Ghanaian</h3>
+		    <p class="number">9</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item cuisine " data-category="cuisine">
+		    <h3 class="name">Moroccan</h3>
+		    <p class="number">10</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item cuisine " data-category="cuisine">
+		    <h3 class="name">French</h3>
+		    <p class="number">11</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item cuisine " data-category="cuisine">
+		    <h3 class="name">Vietnamese</h3>
+		    <p class="number">12</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item cuisine " data-category="cuisine">
+		    <h3 class="name">Korean</h3>
+		    <p class="number">13</p>
+		    <p class="cat">0</p>
+		  </div>
+		  <div class="element-item cuisine " data-category="cuisine">
+		    <h3 class="name">Brazilian</h3>
+		    <p class="number">14</p>
+		    <p class="cat">0</p>
+		  </div>
+		</div>
+
+		<div id="footer">		
+			<p>
+				Assembled by <a href="http://bradpeter.com/" target="_blank" rel="noopener noreferrer" >Brad G. Peter</a>, &copy; 2018 <a href="https://cartoscience.com" target="_blank" rel="noopener noreferrer">Cartoscience</a>
+			</p>
+			<p>
+				Filtering & magical layout dependencies from <a href="https://isotope.metafizzy.co/" target="_blank" rel="noopener noreferrer">Isotope</a> by <a href="https://metafizzy.co/" target="_blank" rel="noopener noreferrer">Metafizzy</a>
+			</p>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>
