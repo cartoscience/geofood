@@ -33,6 +33,14 @@ filtersElem.addEventListener( 'click', function( event ) {
         }
       }
     }
+    
+    document.getElementsByClassName("CHEESE")[0].getElementsByClassName("cat")[0].innerHTML = 0;
+    var randCheese = Math.floor(Math.random() * 100) + 1;
+
+    if ( randCheese <= 10 ) {
+      document.getElementsByClassName("CHEESE")[0].getElementsByClassName("cat")[0].innerHTML = 1;
+    }
+    
     var filterValue = function( itemElem ) {
       var number = itemElem.querySelector('.cat').innerHTML;
       return number == 1;
