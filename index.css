@@ -159,9 +159,9 @@ button#CHEESE {
   font-size: 12px;
 }
 
-.element-item.vegetable          { background: seagreen; }
-.element-item.carb          { background: goldenrod; }
-.element-item.protein          { background: darkorchid; }
-.element-item.method          { background: crimson; }
-.element-item.cuisine          { background: teal; }
+.element-item.vegetable          { color: #E8E8E8; background: seagreen; }
+.element-item.carb          { color: #E8E8E8; background: goldenrod; }
+.element-item.protein          { color: #E8E8E8; background: darkorchid; }
+.element-item.method          { color: #E8E8E8; background: crimson; }
+.element-item.cuisine          { color: #E8E8E8; background: teal; }
 .element-item.CHEESE          { color: #202020; background: #E8E8E8; }
