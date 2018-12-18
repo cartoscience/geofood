@@ -88,6 +88,14 @@ button#cuisine.is-checked {
   color: white;
 }
 
+button#cuisine {
+  border-radius: 0 0.5em 0.5em 0;
+  border-radius: 0 0.5em 0.5em 0;
+}
+button#CHEESE {
+  visibility: hidden;
+}
+
 .button-group:after {
   content: '';
   display: block;
@@ -102,7 +110,6 @@ button#cuisine.is-checked {
 }
 
 .button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
-.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
 
 .grid:after {
   content: '';
@@ -158,3 +165,4 @@ button#cuisine.is-checked {
 .element-item.protein          { background: darkorchid; }
 .element-item.method          { background: crimson; }
 .element-item.cuisine          { background: teal; }
+.element-item.CHEESE          { color: #202020; background: #E8E8E8; }
