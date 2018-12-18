@@ -34,11 +34,11 @@ filtersElem.addEventListener( 'click', function( event ) {
       }
     }
     
-    document.getElementsByClassName("CHEESE")[0].getElementsByClassName("cat")[0].innerHTML = 0;
-    var randCheese = Math.floor(Math.random() * 100) + 1;
+    document.getElementsByClassName("cheese")[0].getElementsByClassName("cat")[0].innerHTML = 0;
+    var randcheese = Math.floor(Math.random() * 100) + 1;
 
-    if ( randCheese <= 10 ) {
-      document.getElementsByClassName("CHEESE")[0].getElementsByClassName("cat")[0].innerHTML = 1;
+    if ( randcheese <= 10 ) {
+      document.getElementsByClassName("cheese")[0].getElementsByClassName("cat")[0].innerHTML = 1;
     }
     
     var filterValue = function( itemElem ) {

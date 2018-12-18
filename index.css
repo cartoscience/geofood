@@ -36,9 +36,9 @@ p {
   display: inline-block;
   padding: 10px 18px;
   margin-bottom: 10px;
-  background: #EEE;
+  background: #E8E8E8;
   border: none;
-  color: #222;
+  color: #313131;
   font-size: 12px;
   cursor: pointer;
 }
@@ -49,50 +49,50 @@ p {
 
 .button:hover {
   background-color: #202020;
-  color: white;
+  color: #E8E8E8;
 }
 
 button#meal:active,
 button#meal.is-checked {
   background-color: cornflowerblue;
-  color: white;
+  color: #E8E8E8;
 }
 button#all:active,
 button#all.is-checked {
   background-color: chocolate;
-  color: white;
+  color: #E8E8E8;
 }
 button#vegetable:active,
 button#vegetable.is-checked {
   background-color: seagreen;
-  color: white;
+  color: #E8E8E8;
 }
 button#carb:active,
 button#carb.is-checked {
   background-color: goldenrod;
-  color: white;
+  color: #E8E8E8;
 }
 button#protein:active,
 button#protein.is-checked {
   background-color: darkorchid;
-  color: white;
+  color: #E8E8E8;
 }
 button#method:active,
 button#method.is-checked {
   background-color: crimson;
-  color: white;
+  color: #E8E8E8;
 }
 button#cuisine:active,
 button#cuisine.is-checked {
   background-color: teal;
-  color: white;
+  color: #E8E8E8;
 }
 
 button#cuisine {
   border-radius: 0 0.5em 0.5em 0;
   border-radius: 0 0.5em 0.5em 0;
 }
-button#CHEESE {
+button#cheese {
   visibility: hidden;
 }
 
@@ -124,8 +124,6 @@ button#CHEESE {
   height: 50px;
   margin: 5px;
   padding: 10px;
-  background: #888;
-  color: #262524;
   border-radius: 10px;
 }
 
@@ -135,11 +133,9 @@ button#CHEESE {
 }
 
 .element-item .name {
-  position: absolute;
-  left: 10px;
-  top: 40%;
-  text-transform: none;
-  letter-spacing: 0;
+  position: relative;
+  padding-top: 7px;
+  text-align: center;
   font-size: 12px;
   font-weight: normal;
 }
@@ -152,16 +148,9 @@ button#CHEESE {
   visibility: hidden;
 }
 
-.element-item .weight {
-  position: absolute;
-  left: 10px;
-  top: 76px;
-  font-size: 12px;
-}
-
 .element-item.vegetable          { color: #E8E8E8; background: seagreen; }
 .element-item.carb          { color: #E8E8E8; background: goldenrod; }
 .element-item.protein          { color: #E8E8E8; background: darkorchid; }
 .element-item.method          { color: #E8E8E8; background: crimson; }
 .element-item.cuisine          { color: #E8E8E8; background: teal; }
-.element-item.CHEESE          { color: #202020; background: #E8E8E8; }
+.element-item.cheese          { color: #313131; background: #E8E8E8; }
