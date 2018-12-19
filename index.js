@@ -1,5 +1,32 @@
 var categories = ["vegetable","carb","protein","method","cuisine"];
 
+/*
+var countrySpiceList = {
+  American: 'Common spices of the U.S.: ',
+  Brazilian: 'Common spices of Brazil: ',
+  Chinese: 'Common spices of China: ',
+  Ethiopian: 'Common spices of Ethiopia: ',
+  French: 'Common spices of France: ',
+  German: 'Common spices of Germany: ',
+  Ghanaian: 'Common spices of Ghana: ',
+  Greek: 'Common spices of Greece: ',
+  Indian: 'Common spices of India: ',
+  Iranian: 'Common spices of Iran: ',
+  Italian: 'Common spices of Italy: ',
+  Japanese: 'Common spices of Japan: ',
+  Korean: 'Common spices of South Korea: ',
+  Malawian: 'Common spices of Malawi: ',
+  Mexican: 'Common spices of Mexico: ',
+  Moroccan: 'Common spices of Morocco: ',
+  Nigerian: 'Common spices of Nigeria: ',
+  Peruvian: 'Common spices of Peru: ',
+  Spanish: 'Common spices of Spain: ',
+  Texan: 'Common spices of Texas: ',
+  Thai: 'Common spices of Thailand: ',
+  Vietnamese: 'Common spices of Vietnam: '
+};
+*/
+
 var iso = new Isotope( '.grid', {
   itemSelector: '.element-item',
   layoutMode: 'fitRows',
@@ -16,8 +43,15 @@ filtersElem.addEventListener( 'click', function( event ) {
     return;
   }
   var filterValue = event.target.getAttribute('data-filter');
+  document.getElementById("country").style.visibility = "hidden";
+  document.getElementById("country").style.height = "0px";
 
   if ( event.target.getAttribute('data-filter' ) == 'meal') {
+
+    document.getElementsByClassName("cheese")[0].getElementsByClassName("cat")[0].innerHTML = 0;
+    document.getElementsByClassName("takeout")[0].getElementsByClassName("cat")[0].innerHTML = 0;
+    var random = Math.floor(Math.random() * 100) + 1;
+
     for (var c = 0; c < categories.length; c++) {
       var x = document.getElementsByClassName(categories[c]);
       var i;
@@ -26,19 +60,25 @@ filtersElem.addEventListener( 'click', function( event ) {
       for (i = 0; i < count; i++) {
         var val = x[i].getElementsByClassName("number")[0].innerHTML;
         x[i].getElementsByClassName("cat")[0].innerHTML = "0";
-        if (val == rand) {
-          x[i].getElementsByClassName("cat")[0].innerHTML = "1";
+        if ( random >= 5 ) {
+          if (val == rand) {
+            x[i].getElementsByClassName("cat")[0].innerHTML = "1";
+            cuisineSelected = x[i].getElementsByClassName("name")[0].innerHTML;
+            document.getElementById("country").style.visibility = "visible";
+            document.getElementById("country").style.height = "250px";
+            document.getElementById("country").style.margin = "10px 10px 0px 10px";
+            document.getElementById("countryImage").innerHTML = "<img src='images/"+cuisineSelected+".png'>";
+            // document.getElementById("countrySpice").innerHTML = countrySpiceList[cuisineSelected];
+          } else {
+            x[i].getElementsByClassName("cat")[0].innerHTML = "0";
+          }
+          if ( random <= 10 ) {
+            document.getElementsByClassName("cheese")[0].getElementsByClassName("cat")[0].innerHTML = 1;
+          }
         } else {
-          x[i].getElementsByClassName("cat")[0].innerHTML = "0";
+          document.getElementsByClassName("takeout")[0].getElementsByClassName("cat")[0].innerHTML = 1;
         }
       }
-    }
-    
-    document.getElementsByClassName("cheese")[0].getElementsByClassName("cat")[0].innerHTML = 0;
-    var randcheese = Math.floor(Math.random() * 100) + 1;
-
-    if ( randcheese <= 10 ) {
-      document.getElementsByClassName("cheese")[0].getElementsByClassName("cat")[0].innerHTML = 1;
     }
     
     var filterValue = function( itemElem ) {
@@ -46,7 +86,9 @@ filtersElem.addEventListener( 'click', function( event ) {
       return number == 1;
     }
   }
+
   iso.arrange({ filter: filterValue, sortBy: 'name' });
+
 });
 
 var buttonGroups = document.querySelectorAll('.button-group');

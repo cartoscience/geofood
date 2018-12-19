@@ -23,8 +23,22 @@ a:hover {
   color: #E8E8E8;
 }
 
-p {
-  padding-top: 5px;
+.map {
+  display: flex;
+  position: relative;
+  height: 0px;
+  color: #E8E8E8;
+  font-size: 12px;
+  visibility: hidden;
+}
+
+#countrySpice {
+  width: 250px;
+  padding-top: 25px;
+  padding-left: 20px;
+}
+
+#footer {
   padding-left: 10px;
   color: #E8E8E8;
   font-size: 12px;
@@ -95,6 +109,9 @@ button#cuisine {
 button#cheese {
   visibility: hidden;
 }
+button#takeout {
+  visibility: hidden;
+}
 
 .button-group:after {
   content: '';
@@ -120,7 +137,7 @@ button#cheese {
 .element-item {
   position: relative;
   float: left;
-  width: 130px;
+  width: 135px;
   height: 50px;
   margin: 5px;
   padding: 10px;
@@ -154,3 +171,4 @@ button#cheese {
 .element-item.method          { color: #E8E8E8; background: crimson; }
 .element-item.cuisine          { color: #E8E8E8; background: teal; }
 .element-item.cheese          { color: #313131; background: #E8E8E8; }
+.element-item.takeout          { color: #E8E8E8; background: #323232; }
