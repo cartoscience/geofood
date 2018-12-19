@@ -1,6 +1,6 @@
 # im-hungry
 
-https://cartoscience.github.io/im-hungry/
+https://cartoscience.github.io/geofood/
 <br><br>
 GNU General Public License v3.0
 <br><br>
