@@ -23,6 +23,10 @@ a:hover {
   color: #E8E8E8;
 }
 
+hr {
+  border: 0.75px solid #4d4d4d;
+}
+
 .map {
   display: flex;
   position: relative;
@@ -32,10 +36,33 @@ a:hover {
   visibility: hidden;
 }
 
-#countrySpice {
-  width: 250px;
+#countryHeader {
+  width: 350px;
+  font-size: 17px;
+  font-weight: 700;
   padding-top: 25px;
   padding-left: 20px;
+}
+
+#countrySpice {
+  width: 550px;
+  padding-top: 5px;
+  padding-left: 24px;
+  line-height: 1.5;
+}
+
+#cheeseText {
+  width: 500px;
+  padding-top: 30px;
+  padding-left: 24px;
+}
+
+#takeoutText {
+  width: 500px;
+  color: #E8E8E8;
+  font-size: 12px;
+  padding-top: 5px;
+  padding-left: 10px;
 }
 
 #footer {
