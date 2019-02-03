@@ -8,7 +8,26 @@ body {background-color: #202020;}
 
 #title {
   color: #E8E8E8;
+  line-height: 0;
+  padding-top: 15px;
   padding-left: 10px;
+}
+
+#geoFood {
+  color: #E8E8E8;
+  line-height: 1.5;
+  font-size: 12px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+#hungry {
+  color: #E8E8E8;
+  font-weight: 700;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 15px;
 }
 
 a:link {
@@ -24,7 +43,7 @@ a:hover {
 }
 
 hr {
-  border: 0.75px solid #4d4d4d;
+  border: 0.5px solid #4d4d4d;
 }
 
 .map {
