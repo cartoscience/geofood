@@ -26,28 +26,78 @@ var countryHeaderList = {
 };
 
 var countrySpiceList = {
-  American: 'oregano, basil, garlic, sage, rosemary, bay leaf',
-  Brazilian: 'paprika, garlic, onion, cumin, coriander, coriander seed',
-  Chinese: 'ginger, garlic, scallion, star anise, chili pepper, cinnamon, soy',
-  Ethiopian: 'onion, garlic, ginger, cardamom, cumin, chili pepper, clove',
-  French: 'parsley, garlic, rosemary, thyme, oregano, marjoram, lavender',
-  German: 'parsley, thyme, marjoram, bay leaf, caraway, chilves, dill, caraway',
-  Ghanaian: 'thyme, basil, garlic, onions, ginger, chili pepper, nutmeg, bay leaf',
-  Greek: 'oregano, allspice, cinnamon, mint, parsley, dill',
-  Indian: 'ginger, turmeric, cumin, coriander, fenugreek, cardamom, cinnamon, chili pepper',
-  Iranian: 'paprika, nutmeg, chili pepper, coriander, cinnamon, cardamom, clove',
-  Italian: 'oregano, parsley, rosemary, basil, bay leaf, sage, marjoram, garlic',
-  Japanese: 'ginger, wasabi, sesame, chili pepper, citrus zest, soy',
-  Korean: 'sesame, chili pepper, garlic, ginger, scallions, soy',
-  Malawian: 'garlic, onion, kambuzi pepper',
-  Mexican: 'cumin, garlic, coriander, chili pepper, paprika, oregano',
-  Moroccan: 'cumin, cinnamon, ginger, saffron, turmeric, paprika',
-  Nigerian: 'curry powder, nutmeg, onion, chili pepper',
-  Peruvian: 'coriander, mint, basil, oregano, chincho',
-  Spanish: 'paprika, saffron, garlic, oregano, chili pepper, parsley, rosemary',
-  Texan: 'garlic, onion, paprika, chili powder, cumin',
-  Thai: 'ginger, garlic, galangal, Thai basil, lemongrass, chili pepper, coriander',
-  Vietnamese: 'lemongrass, ginger, mint, garlic, onion, coriander, star anise, coriander'
+  American: 'Oregano, Basil, Garlic, Sage, Rosemary, Bay Leaf, Cinnamon',
+  Brazilian: 'Paprika, Garlic, Onion, Cumin, Coriander',
+  Chinese: 'Ginger, Garlic, Scallion, Star Anise, Chili Pepper, Soy',
+  Ethiopian: 'Onion, Garlic, Ginger, Cardamom, Cumin, Chili Pepper, Clove, Fenugreek',
+  French: 'Parsley, Garlic, Rosemary, Thyme, Oregano, Marjoram, Lavender',
+  German: 'Parsley, Thyme, Marjoram, Bay leaf, Caraway, Chives, Dill, Caraway',
+  Ghanaian: 'Thyme, Basil, Garlic, Onions, Ginger, Chili Pepper, Nutmeg, Bay Leaf',
+  Greek: 'Oregano, Allspice, Cinnamon, Mint, Parsley, Dill',
+  Indian: 'Ginger, Turmeric, Cumin, Coriander, Fenugreek, Cardamom, Cinnamon, Chili Pepper',
+  Iranian: 'Saffron, Paprika, Nutmeg, Chili Pepper, Coriander, Cinnamon, Cardamom, Clove',
+  Italian: 'Oregano, Parsley, Rosemary, Basil, Bay Leaf, Sage, Marjoram, Garlic',
+  Japanese: 'Ginger, Wasabi, Sesame, Chili Pepper, Citrus Zest, Soy',
+  Korean: 'Sesame, Chili Pepper, Garlic, Ginger, Scallions, Soy',
+  Malawian: 'Garlic, Onion, Kambuzi Pepper',
+  Mexican: 'Cumin, Garlic, Coriander, Chili Pepper, Paprika, Oregano',
+  Moroccan: 'Cumin, Cinnamon, Ginger, Saffron, Turmeric, Paprika',
+  Nigerian: 'Curry Powder, Nutmeg, Onion, Chili Pepper',
+  Peruvian: 'Coriander, Mint, Basil, Oregano, Huacatay',
+  Spanish: 'Paprika, Saffron, Garlic, Oregano, Chili Pepper, Parsley, Rosemary',
+  Texan: 'Garlic, Onion, Paprika, Chili Powder, Cumin',
+  Thai: 'Ginger, Garlic, Galangal, Thai Basil, Lemongrass, Chili Pepper, Coriander',
+  Vietnamese: 'Lemongrass, Ginger, Mint, Garlic, Onion, Coriander, Star Anise, Coriander'
+};
+
+var countryInfoList = {
+  American: 'Sage is commonly found in dressing (or stuffing) during Thanksgiving in the U.S.',
+  Brazilian: 'Coriander is commonly found in feijoada, a popular bean stew of Brazil.',
+  Chinese: 'Ginger, garlic, and scallions (GGS) is a common base for many Chinese recipes.',
+  Ethiopian: 'Berbere is a popular spice blend in Ethiopia composed of chili peppers, garlic, ginger, fenugreek, and other spices.',
+  French: 'Lavendar is somewhat unique to France and is an essential component in the popular spice blend Herbes de Provence.',
+  German: 'Caraway seeds are popular in Germany, giving sauerkraut its distinct flavor.',
+  Ghanaian: 'Chili peppers, thyme, and ginger can be found in the classic Ghanaian jollof rice.',
+  Greek: 'Greek leg of lamb is popularly complemented with a side of mint jelly.',
+  Indian: 'Garam masala is a popular spice blend in India composed of coriander seeds, cumin, cardamom, cinnamon, and other spices.',
+  Iranian: 'Khoresh Bademjan, an Iranian eggplant and tomato stew, is commonly flavored by saffron, turmeric, and cinnamon.',
+  Italian: 'Basil is a staple in Italian cuisine, giving pesto its aromatic flavor and deep green color.',
+  Japanese: 'Citrus is an integral ingredient to ponzu sauce, a classic Japanese condiment.',
+  Korean: 'Chili peppers make up the popular Korean gochujang, a chili paste often accompanying bibimbap.',
+  Malawian: 'The kambuzi pepper is commonly used to spice tomato relish served alongside brai (charcoal grilled meats close to the flame).',
+  Mexican: 'Pozole, a Mexican pork and hominy stew, is spiced with ancho, guajillo, and arból chiles.',
+  Moroccan: 'In Moroccan cuisine, the tajine (an earthenware cooking vessel) is used to slow cook meats with spices such as turmeric, cumin, and cinnamon.',
+  Nigerian: 'The popular Nigerian egusi soup is prepared with melon seeds, onion, and chili peppers.',
+  Peruvian: 'Huacatay is an herb native to Peru that is used in a hot stone style cooking called Pachamanca.',
+  Spanish: 'Saffron gives Spanish paella its unique yellow color and distinct flavor.',
+  Texan: 'Garlic, onion, chili powder, cumin, and chili peppers combine to form the trademark Texas chili.',
+  Thai: 'Thai basil is used to fragrance many Thai dishes including kaeng khiao wan (sweet green curry) and many stir fried dishes.',
+  Vietnamese: 'Cinnamon, star anise, cardamom, onion, and ginger form the base of the famous Vietnamese phở broth.'
+};
+
+var countrySharedList = {
+  American: 'Oregano is also popular in France, Greece, Italy, Spain, Mexico, and Peru.',
+  Brazilian: 'Coriander is also popular in India, Iran, Mexico, Peru, Thailand, and Vietnam.',
+  Chinese: 'Ginger is also popular in Ethiopia, Ghana, India, Japan, South Korea, Morocco, Thailand, and Vietnam.',
+  Ethiopian: 'Clove is also popular in Iran.',
+  French: 'Marjoram is also popular in Germany and Italy.',
+  German: 'Dill is also popular in Greece.',
+  Ghanaian: 'Bay leaf is also popular in the U.S., Germany, and Italy.',
+  Greek: 'Mint is also popular in Peru and Vietnam.',
+  Indian: 'Cardamom is also popular in Ethiopia and Iran.',
+  Iranian: 'Cinnamon is also popular in Greece, India, Morocco, and the U.S.',
+  Italian: 'Sage is also popular in the U.S.',
+  Japanese: 'Soy is also popular in China and South Korea.',
+  Korean: 'Sesame is also popular in Japan.',
+  Malawian: 'Onion is also popular in Brazil, Ethiopia, Ghana, Nigeria, Texas, and Vietnam.',
+  Mexican: 'Cumin is also popular in Brazil, India, Ethiopia, Morocco, and Texas.',
+  Moroccan: 'Turmeric is also popular in India.',
+  Nigerian: 'Nutmeg is also popular in Ghana and Iran.',
+  Peruvian: 'Basil is also popular in the U.S., Ghana, and Italy.',
+  Spanish: 'Saffron is also popular in Morocco and Iran.',
+  Texan: 'Paprika is also popular in Iran, Mexico, Morocco, Spain, and Brazil.',
+  Thai: 'Lemongrass is also popular in Vietnam.',
+  Vietnamese: 'Star anise is also popular in China.'
 };
 
 var iso = new Isotope( '.grid', {
@@ -93,6 +143,8 @@ filtersElem.addEventListener( 'click', function( event ) {
             document.getElementById("countryImage").innerHTML = "<img src='images/"+cuisineSelected+".png'>";
             document.getElementById("countryHeader").innerHTML = countryHeaderList[cuisineSelected];
             document.getElementById("countrySpice").innerHTML = countrySpiceList[cuisineSelected];
+            document.getElementById("countryInfo").innerHTML = countryInfoList[cuisineSelected];
+            document.getElementById("countryShared").innerHTML = countrySharedList[cuisineSelected];
             document.getElementById("takeoutText").innerHTML = '';
           } else {
             x[i].getElementsByClassName("cat")[0].innerHTML = "0";
