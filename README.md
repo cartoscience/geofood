@@ -1,4 +1,4 @@
-# geofood
+# GeoFood
 
 https://cartoscience.github.io/geofood/
 <br><br>
