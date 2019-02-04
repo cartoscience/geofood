@@ -8,9 +8,10 @@ body {background-color: #202020;}
 
 #title {
   color: #E8E8E8;
-  line-height: 0;
+  margin: 0 0 0 0;
   padding-top: 15px;
   padding-left: 10px;
+  padding-bottom: 5px;
 }
 
 #geoFood {
