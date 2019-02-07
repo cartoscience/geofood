@@ -143,8 +143,8 @@ filtersElem.addEventListener( 'click', function( event ) {
             document.getElementById("countryImage").innerHTML = "<img src='images/"+cuisineSelected+".png'>";
             document.getElementById("countryHeader").innerHTML = countryHeaderList[cuisineSelected];
             document.getElementById("countrySpice").innerHTML = countrySpiceList[cuisineSelected];
-            document.getElementById("countryInfo").innerHTML = countryInfoList[cuisineSelected];
             document.getElementById("countryShared").innerHTML = countrySharedList[cuisineSelected];
+            document.getElementById("countryInfo").innerHTML = countryInfoList[cuisineSelected];
             document.getElementById("takeoutText").innerHTML = '';
           } else {
             x[i].getElementsByClassName("cat")[0].innerHTML = "0";
